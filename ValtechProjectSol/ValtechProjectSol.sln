@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValtechProject", "ValtechProject\ValtechProject.csproj", "{F2E71C53-CAC4-4722-BF15-600CB8DB80B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValtechTest", "ValtechTest\ValtechTest.csproj", "{DEC726E6-58F0-4611-B72F-D34EFCCA6863}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2E71C53-CAC4-4722-BF15-600CB8DB80B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E71C53-CAC4-4722-BF15-600CB8DB80B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E71C53-CAC4-4722-BF15-600CB8DB80B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E71C53-CAC4-4722-BF15-600CB8DB80B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC726E6-58F0-4611-B72F-D34EFCCA6863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC726E6-58F0-4611-B72F-D34EFCCA6863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC726E6-58F0-4611-B72F-D34EFCCA6863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC726E6-58F0-4611-B72F-D34EFCCA6863}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
