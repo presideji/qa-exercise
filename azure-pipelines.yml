@@ -18,9 +18,7 @@ steps:
 
 - task: NuGetInstaller@0
 
-- task: NuGetCommand@2
-    input:
-      restoreSolution: '$(solution)'
+
 
 
 
