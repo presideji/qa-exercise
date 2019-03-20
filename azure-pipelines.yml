@@ -16,18 +16,29 @@ variables:
 
 steps:
 
+- task: NuGetInstaller@0
+
+- task: NuGetCommand@2
+    input:
+      restoreSolution: '$(solution)'
+
+
+
 - script: dotnet restore
+
 - script: dotnet build
+
+
 
 - script: dotnet test <test-project> --logger trx
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
     testRunner: VSTest
-    testResultsFiles: '**/*.trx'
+    testResultsFiles: 'CICDReport.trx'
 
 - script: dotnet test <test-project> --logger trx --collect "Code coverage"
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
-    testResultsFiles: '**/*.trx'
+    testResultsFiles: 'CICDReport.trx'
