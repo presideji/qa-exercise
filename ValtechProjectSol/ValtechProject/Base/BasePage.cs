@@ -31,7 +31,6 @@ namespace ValtechProject.Base
         //** Reusable Actions **//
         public IWebElement Element;
         public Actions Actions => new Actions(Driver);
-
         public Random Random => new Random();
         public SelectElement SelectElement => new SelectElement(Element);
         public int DefaultTime = Config.Default.DefaultTimeOuts;

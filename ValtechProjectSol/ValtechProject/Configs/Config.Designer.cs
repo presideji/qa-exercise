@@ -13,7 +13,7 @@ namespace ValtechProject.Configs {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Config : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class Config : global::System.Configuration.ApplicationSettingsBase {
         
         private static Config defaultInstance = ((Config)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Config())));
         
@@ -41,6 +41,55 @@ namespace ValtechProject.Configs {
         public int DefaultTimeOuts {
             get {
                 return ((int)(this["DefaultTimeOuts"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("chrome")]
+        public string ChromeBrowser {
+            get {
+                return ((string)(this["ChromeBrowser"]));
+            }
+            set {
+                this["ChromeBrowser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("firefox")]
+        public string FirefoxBrowser {
+            get {
+                return ((string)(this["FirefoxBrowser"]));
+            }
+            set {
+                this["FirefoxBrowser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ie")]
+        public string InternetExplorerBrowser {
+            get {
+                return ((string)(this["InternetExplorerBrowser"]));
+            }
+            set {
+                this["InternetExplorerBrowser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\admin\\Documents\\CERTIFICATIONS\\Software Testing\\AutoAndre\\automationScre" +
+            "enShot\\")]
+        public string Screenshot {
+            get {
+                return ((string)(this["Screenshot"]));
+            }
+            set {
+                this["Screenshot"] = value;
             }
         }
     }

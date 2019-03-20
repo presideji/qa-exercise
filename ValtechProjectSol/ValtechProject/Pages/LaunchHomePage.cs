@@ -79,8 +79,9 @@ namespace ValtechProject.Pages
 
         public void PageTitlePresent()
         {
-            var title = Driver.Title;
-            Assert.AreEqual(title, PageTitle);
+            //var title = Driver.Title;
+            //Assert.AreEqual(title, PageTitle);
+            CheckUrlContains("Where Experiences are Engineered");
         }
 
         public void MenuBar()
@@ -119,9 +120,9 @@ namespace ValtechProject.Pages
         {
             var officeList = Driver.FindElement(By.CssSelector("#valtech-wrapper > div > main > vue > div > div.masthead-contact.masthead-scaler > div > div > div.masthead-contact__nav > ul"))
             .FindElements(By.TagName("li")).Count();
-            Console.WriteLine($"{officeList}");   
-
+           Console.WriteLine($"{officeList}"); 
         }
+
         #endregion
 
 
